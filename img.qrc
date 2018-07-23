@@ -1,0 +1,78 @@
+<RCC>
+    <qresource prefix="/img">
+        <file alias="starfield">starfield.jpg</file>
+        <file>star-single.png</file>
+        <file alias="starfield-r">starfield-r.jpg</file>
+        <file>star-single-r.png</file>
+        <file alias="star-g">star-g.png</file>
+        <file alias="star-n">star-null.png</file>
+        <file alias="sf1">starfield-1 (1).png</file>
+        <file alias="sf2">starfield-1 (2).png</file>
+        <file alias="sf3">starfield-1 (3).png</file>
+        <file alias="sf4">starfield-1 (4).png</file>
+        <file alias="sf5">starfield-1 (5).png</file>
+        <file alias="star-gr">star-gr.png</file>
+        <file alias="star-w">star-w.png</file>
+        <file alias="star-y">star-y.png</file>
+        <file alias="star-sr">star-sr.png</file>
+        <file>greenring.png</file>
+        <file alias="star-r">star-r.png</file>
+        <file alias="tar">tar.png</file>
+        <file alias="ield">ield.png</file>
+        <file>starfield.ico</file>
+        <file>star.png</file>
+        <file>tittle.png</file>
+        <file>suppot.png</file>
+        <file>whitering.png</file>
+        <file alias="numgg">numgg.jpg</file>
+        <file alias="numgy">numgy.jpg</file>
+        <file alias="exit">exit.jpg</file>
+        <file>chapter1.png</file>
+        <file>chapter2.png</file>
+        <file>chapter3.png</file>
+        <file>chapter4.png</file>
+        <file>chapter5.png</file>
+        <file>chapter6.png</file>
+        <file alias="1">chapter1-b.png</file>
+        <file alias="2">chapter2-b.png</file>
+        <file alias="3">chapter3-b.png</file>
+        <file alias="4">chapter4-b.png</file>
+        <file alias="5">chapter5-b.png</file>
+        <file alias="6">chapter6-b.png</file>
+        <file alias="sub">suppotb.png</file>
+        <file alias="exchange">exchange.png</file>
+        <file alias="return">return.png</file>
+        <file alias="numgr">numgr.png</file>
+        <file alias="starfield-b">starfield-b.jpg</file>
+        <file alias="random">random.png</file>
+        <file alias="1a">chapter1-a.png</file>
+        <file alias="1c">chapter1-c.png</file>
+        <file alias="2a">chapter2-a.png</file>
+        <file alias="2c">chapter2-c.png</file>
+        <file alias="3a">chapter3-a.png</file>
+        <file alias="3c">chapter3-c.png</file>
+        <file alias="4a">chapter4-a.png</file>
+        <file alias="4c">chapter4-c.png</file>
+        <file alias="5a">chapter5-a.png</file>
+        <file alias="5c">chapter5-c.png</file>
+        <file alias="6a">chapter6-a.png</file>
+        <file alias="6c">chapter6-c.png</file>
+    </qresource>
+    <qresource prefix="/">
+        <file>line.qml</file>
+        <file>greenring.qml</file>
+        <file>greenring.png</file>
+        <file>redring.qml</file>
+        <file>redring.png</file>
+        <file>yellowring.qml</file>
+        <file>yellowring.png</file>
+        <file>vectory.qml</file>
+        <file>whitering.qml</file>
+        <file>whitering.png</file>
+        <file>bsys.qml</file>
+    </qresource>
+    <qresource prefix="/font">
+        <file>Let's go Digital Regular.ttf</file>
+        <file>FORTE.TTF</file>
+    </qresource>
+</RCC>
