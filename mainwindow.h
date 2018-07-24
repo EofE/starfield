@@ -48,6 +48,7 @@ private slots:
         void chapter6spec();
 void endword();
 private:
+bool restpart,onlyone1,onlyone2,onlyone3,onlyone4;
 bool winlist[7],wintrue;
         QTimer *word;
                 void chapterbackto0();

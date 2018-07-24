@@ -162,438 +162,760 @@ commoncha();
 void MainWindow::chapter1()
 {
         chaptercoise=1;
-    red=0;
-    green[0]=7,green[1]=15;
-    gr=2;//greenstar-number
-    go=2;//yellowstar-number
-    sln=0;
-    border=4;
-    gold[0]=3,gold[1]=12;
-    pathbox *b=new pathbox(4,0,this);//0
-    box.push_back(b);
-    b=new pathbox(0,1,1,0,this);//1
-    box.push_back(b);
-    b=new pathbox(this);//2
-    box.push_back(b);
-    b=new pathbox(2,1,this);//3
-    box.push_back(b);
-    b=new pathbox(0,1,0,1,this);//4
-    box.push_back(b);
-    b=new pathbox(1,1,0,1,this);//5
-    box.push_back(b);
-    b=new pathbox(0,1,1,0,this);//6
-    box.push_back(b);
-    b=new pathbox(3,0,1,1,0,this);//7
-    box.push_back(b);
-    b=new pathbox(0,1,1,0,this);//8
-    box.push_back(b);
-    b=new pathbox(1,0,1,0,this);//9
-    box.push_back(b);
-    b=new pathbox(1,0,1,0,this);//10
-    box.push_back(b);
-    b=new pathbox(0,0,1,1,this);//11
-    box.push_back(b);
-    b=new pathbox(1,1,this);//12
-    box.push_back(b);
-    b=new pathbox(1,0,1,0,this);//13
-    box.push_back(b);
-    b=new pathbox(1,1,0,0,this);//14
-    box.push_back(b);
-    b=new pathbox(1,1,0,1,0,this);//15
-    box.push_back(b);
+        red=14;
+        green[0]=17,green[1]=39;
+        gr=2;
+        go=4;
+        border=7;
+        sln=0;
+        gold[0]=4,gold[1]=36,gold[2]=37,gold[3]=40;
+        pathbox *b=new pathbox(this);//0
+        box.push_back(b);
+        b=new pathbox(this);//1
+        box.push_back(b);
+        b=new pathbox(0,0,1,1,this);//2
+        box.push_back(b);
+        b=new pathbox(1,0,1,1,this);//3
+        box.push_back(b);
+        b=new pathbox(3,1,this);//4
+        box.push_back(b);
+        b=new pathbox(this);//5
+        box.push_back(b);
+        b=new pathbox(this);//6
+        box.push_back(b);
+        b=new pathbox(this);//7
+        box.push_back(b);
+        b=new pathbox(this);//8
+        box.push_back(b);
+        b=new pathbox(1,1,0,1,this);//9
+        box.push_back(b);
+        b=new pathbox(1,0,1,1,this);//10
+        box.push_back(b);
+        b=new pathbox(0,1,1,0,this);//11
+        box.push_back(b);
+        b=new pathbox(this);//12
+        box.push_back(b);
+        b=new pathbox(this);//13
+        box.push_back(b);
+        b=new pathbox(4,0,this);//14
+        box.push_back(b);
+        b=new pathbox(0,1,1,1,this);//15
+        box.push_back(b);
+        b=new pathbox(1,1,1,0,this);//16
+        box.push_back(b);
+        b=new pathbox(4,1,0,1,1,this);//17
+        box.push_back(b);
+        b=new pathbox(1,1,0,1,this);//18
+        box.push_back(b);
+        b=new pathbox(0,1,1,1,this);//19
+        box.push_back(b);
+        b=new pathbox(0,0,1,1,this);//20
+        box.push_back(b);
+        b=new pathbox(0,1,0,1,this);//21
+        box.push_back(b);
+        b=new pathbox(0,1,1,1,this);//22
+        box.push_back(b);
+        b=new pathbox(0,1,1,0,this);//23
+        box.push_back(b);
+        b=new pathbox(1,1,0,0,this);//24
+        box.push_back(b);
+        b=new pathbox(0,1,0,1,this);//25
+        box.push_back(b);
+        b=new pathbox(1,1,1,0,this);//26
+        box.push_back(b);
+        b=new pathbox(0,1,1,0,this);//27
+        box.push_back(b);
+        b=new pathbox(1,0,0,1,this);//28
+        box.push_back(b);
+        b=new pathbox(0,1,1,1,this);//29
+        box.push_back(b);
+        b=new pathbox(1,0,1,0,this);//30
+        box.push_back(b);
+        b=new pathbox(1,1,0,0,this);//31
+        box.push_back(b);
+        b=new pathbox(1,0,0,1,this);//32
+        box.push_back(b);
+        b=new pathbox(1,1,0,1,this);//33
+        box.push_back(b);
+        b=new pathbox(1,0,1,0,this);//34
+        box.push_back(b);
+        b=new pathbox(this);//35
+        box.push_back(b);
+        b=new pathbox(1,1,this);//36
+        box.push_back(b);
+        b=new pathbox(4,1,this);//37
+        box.push_back(b);
+        b=new pathbox(0,1,1,1,this);//38
+        box.push_back(b);
+        b=new pathbox(3,0,0,1,1,this);//39
+        box.push_back(b);
+        b=new pathbox(1,1,this);//40
+        box.push_back(b);
+        b=new pathbox(this);//41
+        box.push_back(b);
+        b=new pathbox(this);//42
+        box.push_back(b);
+        b=new pathbox(this);//43
+        box.push_back(b);
+        b=new pathbox(this);//44
+        box.push_back(b);
+        b=new pathbox(this);//45
+        box.push_back(b);
+        b=new pathbox(this);//46
+        box.push_back(b);
+        b=new pathbox(this);//47
+        box.push_back(b);
+        b=new pathbox(this);//48
+        box.push_back(b);
     commoncha();
 }
 void MainWindow::chapter2()
 {
         chaptercoise=2;
-    red=2;
-    green[0]=13;
-    gr=1;//greenstar-number
-    go=2;//yellowstar-number
-    sln=0;
-    border=5;
-    gold[0]=20,gold[1]=23;
-    pathbox *b=new pathbox(this);//0
-    box.push_back(b);
-    b=new pathbox(this);//1
-    box.push_back(b);
-    b=new pathbox(2,0,this);//2
-    box.push_back(b);
-    b=new pathbox(this);//3
-    box.push_back(b);
-    b=new pathbox(this);//4
-    box.push_back(b);
-    b=new pathbox(this);//5
-    box.push_back(b);
-    b=new pathbox(1,0,1,0,this);//6
-    box.push_back(b);
-    b=new pathbox(1,0,1,1,this);//7
-    box.push_back(b);
-    b=new pathbox(this);//8
-    box.push_back(b);
-    b=new pathbox(this);//9
-    box.push_back(b);
-    b=new pathbox(0,1,1,0,this);//10
-    box.push_back(b);
-    b=new pathbox(1,1,1,0,this);//11
-    box.push_back(b);
-    b=new pathbox(1,1,0,0,this);//12
-    box.push_back(b);
-    b=new pathbox(3,1,0,1,0,this);//13
-    box.push_back(b);
-    b=new pathbox(this);//14
-    box.push_back(b);
-    b=new pathbox(0,1,0,1,this);//15
-    box.push_back(b);
-    b=new pathbox(1,1,0,0,this);//16
-    box.push_back(b);
-    b=new pathbox(0,1,1,0,this);//17
-    box.push_back(b);
-    b=new pathbox(1,1,1,0,this);//18
-    box.push_back(b);
-    b=new pathbox(this);//19
-    box.push_back(b);
-    b=new pathbox(4,1,this);//20
-    box.push_back(b);
-    b=new pathbox(1,1,0,0,this);//21
-    box.push_back(b);
-    b=new pathbox(1,0,1,0,this);//22
-    box.push_back(b);
-    b=new pathbox(1,1,this);//23
-    box.push_back(b);
-    b=new pathbox(this);//24
-    box.push_back(b);
+        red=21;
+           green[0]=18,green[1]=38;
+           gr=2;//greenstar-number
+           go=2;//yellowstar-number
+           sln=0;
+           border=7;
+           gold[0]=8,gold[1]=48;
+           pathbox *b=new pathbox(this);//0
+           box.push_back(b);
+           b=new pathbox(1,0,0,1,this);//1
+           box.push_back(b);
+           b=new pathbox(1,1,1,0,this);//2
+           box.push_back(b);
+           b=new pathbox(1,0,1,0,this);//3
+           box.push_back(b);
+           b=new pathbox(1,1,0,0,this);//4
+           box.push_back(b);
+           b=new pathbox(this);//5
+           box.push_back(b);
+           b=new pathbox(this);//6
+           box.push_back(b);
+           b=new pathbox(this);//7
+           box.push_back(b);
+           b=new pathbox(1,1,this);//8
+           box.push_back(b);
+           b=new pathbox(1,1,0,0,this);//9
+           box.push_back(b);
+           b=new pathbox(1,0,1,0,this);//10
+           box.push_back(b);
+           b=new pathbox(0,1,1,0,this);//11
+           box.push_back(b);
+           b=new pathbox(1,1,1,0,this);//12
+           box.push_back(b);
+           b=new pathbox(1,0,1,0,this);//13
+           box.push_back(b);
+           b=new pathbox(1,0,1,0,this);//14
+           box.push_back(b);
+           b=new pathbox(1,1,0,0,this);//15
+           box.push_back(b);
+           b=new pathbox(1,0,1,0,this);//16
+           box.push_back(b);
+           b=new pathbox(1,0,1,1,this);//17
+           box.push_back(b);
+           b=new pathbox(4,0,1,0,1,this);//18
+           box.push_back(b);
+           b=new pathbox(0,1,1,0,this);//19
+           box.push_back(b);
+           b=new pathbox(1,1,0,0,this);//20
+           box.push_back(b);
+           b=new pathbox(4,0,this);//21
+           box.push_back(b);
+           b=new pathbox(1,1,1,0,this);//22
+           box.push_back(b);
+           b=new pathbox(0,1,0,1,this);//23
+           box.push_back(b);
+           b=new pathbox(1,0,0,1,this);//24
+           box.push_back(b);
+           b=new pathbox(1,0,1,1,this);//25
+           box.push_back(b);
+           b=new pathbox(0,0,1,1,this);//26
+           box.push_back(b);
+           b=new pathbox(0,1,1,0,this);//27
+           box.push_back(b);
+           b=new pathbox(1,0,1,0,this);//28
+           box.push_back(b);
+           b=new pathbox(0,1,0,1,this);//29
+           box.push_back(b);
+           b=new pathbox(1,0,1,0,this);//30
+           box.push_back(b);
+           b=new pathbox(1,0,1,0,this);//31
+           box.push_back(b);
+           b=new pathbox(0,1,0,1,this);//32
+           box.push_back(b);
+           b=new pathbox(this);//33
+           box.push_back(b);
+           b=new pathbox(this);//34
+           box.push_back(b);
+           b=new pathbox(1,1,0,0,this);//35
+           box.push_back(b);
+           b=new pathbox(1,0,1,0,this);//36
+           box.push_back(b);
+           b=new pathbox(1,1,0,0,this);//37
+           box.push_back(b);
+           b=new pathbox(3,0,1,1,0,this);//38
+           box.push_back(b);
+           b=new pathbox(0,0,1,1,this);//39
+           box.push_back(b);
+           b=new pathbox(1,0,1,0,this);//40
+           box.push_back(b);
+           b=new pathbox(this);//41
+           box.push_back(b);
+           b=new pathbox(0,1,0,1,this);//42
+           box.push_back(b);
+           b=new pathbox(1,1,1,0,this);//43
+           box.push_back(b);
+           b=new pathbox(1,1,0,0,this);//44
+           box.push_back(b);
+           b=new pathbox(1,0,0,1,this);//45
+           box.push_back(b);
+           b=new pathbox(1,0,1,0,this);//46
+           box.push_back(b);
+           b=new pathbox(0,1,0,1,this);//47
+           box.push_back(b);
+           b=new pathbox(3,1,this);//48
+           box.push_back(b);
     commoncha();
 }
 
 void MainWindow::chapter3()
 {
         chaptercoise=3;
-    red=28;
-    green[0]=13;
-    gr=1;
-    go=2;
-    border=7;
-    sln=0;
-    gold[0]=31,gold[1]=33;
-    pathbox *b=new pathbox(this);//0
-    box.push_back(b);
-    b=new pathbox(this);//1
-    box.push_back(b);
-    b=new pathbox(this);//2
-    box.push_back(b);
-    b=new pathbox(this);//3
-    box.push_back(b);
-    b=new pathbox(this);//4
-    box.push_back(b);
-    b=new pathbox(this);//5
-    box.push_back(b);
-    b=new pathbox(this);//6
-    box.push_back(b);
-    b=new pathbox(1,0,1,1,this);//7
-    box.push_back(b);
-    b=new pathbox(0,0,1,1,this);//8
-    box.push_back(b);
-    b=new pathbox(1,0,1,0,this);//9
-    box.push_back(b);
-    b=new pathbox(1,0,0,1,this);//10
-    box.push_back(b);
-    b=new pathbox(1,1,0,0,this);//11
-    box.push_back(b);
-    b=new pathbox(0,0,1,1,this);//12
-    box.push_back(b);
-    b=new pathbox(3,1,0,1,0,this);//13
-    box.push_back(b);
-    b=new pathbox(1,0,1,1,this);//14
-    box.push_back(b);
-    b=new pathbox(0,0,1,1,this);//15
-    box.push_back(b);
-    b=new pathbox(1,0,1,0,this);//16
-    box.push_back(b);
-    b=new pathbox(1,0,1,1,this);//17
-    box.push_back(b);
-    b=new pathbox(0,0,1,1,this);//18
-    box.push_back(b);
-    b=new pathbox(this);//19
-    box.push_back(b);
-    b=new pathbox(1,1,0,0,this);//20
-    box.push_back(b);
-    b=new pathbox(0,0,1,1,this);//21
-    box.push_back(b);
-    b=new pathbox(1,0,1,0,this);//22
-    box.push_back(b);
-    b=new pathbox(0,0,1,1,this);//23
-    box.push_back(b);
-    b=new pathbox(1,0,1,1,this);//24
-    box.push_back(b);
-    b=new pathbox(1,0,0,1,this);//25
-    box.push_back(b);
-    b=new pathbox(this);//26
-    box.push_back(b);
-    b=new pathbox(0,0,1,1,this);//27
-    box.push_back(b);
-    b=new pathbox(1,0,this);//28
-    box.push_back(b);
-    b=new pathbox(0,0,1,1,this);//29
-    box.push_back(b);
-    b=new pathbox(this);//30
-    box.push_back(b);
-    b=new pathbox(1,1,this);//31
-    box.push_back(b);
-    b=new pathbox(0,0,1,1,this);//32
-    box.push_back(b);
-    b=new pathbox(4,1,this);//33
-    box.push_back(b);
-    b=new pathbox(0,1,0,1,this);//34
-    box.push_back(b);
-    b=new pathbox(this);//35
-    box.push_back(b);
-    b=new pathbox(this);//36
-    box.push_back(b);
-    b=new pathbox(this);//37
-    box.push_back(b);
-    b=new pathbox(this);//38
-    box.push_back(b);
-    b=new pathbox(this);//39
-    box.push_back(b);
-    b=new pathbox(this);//40
-    box.push_back(b);
-    b=new pathbox(this);//41
-    box.push_back(b);
-    b=new pathbox(this);//42
-    box.push_back(b);
-    b=new pathbox(this);//43
-    box.push_back(b);
-    b=new pathbox(this);//44
-    box.push_back(b);
-    b=new pathbox(this);//45
-    box.push_back(b);
-    b=new pathbox(this);//46
-    box.push_back(b);
-    b=new pathbox(this);//47
-    box.push_back(b);
-    b=new pathbox(this);//48
-    box.push_back(b);
+        red=0;
+        green[0]=18,green[1]=30,green[2]=40;
+        gr=3;//greenstar-number
+        go=2;//yellowstar-number
+        sln=0;
+        border=7;
+        gold[0]=14,gold[1]=47;
+        pathbox *b=new pathbox(4,0,this);//0
+        box.push_back(b);
+        b=new pathbox(1,1,0,1,this);//1
+        box.push_back(b);
+        b=new pathbox(0,1,1,0,this);//2
+        box.push_back(b);
+        b=new pathbox(0,1,1,0,this);//3
+        box.push_back(b);
+        b=new pathbox(1,1,0,0,this);//4
+        box.push_back(b);
+        b=new pathbox(1,1,1,0,this);//5
+        box.push_back(b);
+        b=new pathbox(0,1,1,0,this);//6
+        box.push_back(b);
+        b=new pathbox(1,1,0,0,this);//7
+        box.push_back(b);
+        b=new pathbox(0,1,1,0,this);//8
+        box.push_back(b);
+        b=new pathbox(1,0,0,1,this);//9
+        box.push_back(b);
+        b=new pathbox(0,1,1,0,this);//10
+        box.push_back(b);
+        b=new pathbox(1,1,0,1,this);//11
+        box.push_back(b);
+        b=new pathbox(0,1,0,1,this);//12
+        box.push_back(b);
+        b=new pathbox(1,1,0,0,this);//13
+        box.push_back(b);
+        b=new pathbox(4,1,this);//14
+        box.push_back(b);
+        b=new pathbox(1,0,1,0,this);//15
+        box.push_back(b);
+        b=new pathbox(0,1,1,0,this);//16
+        box.push_back(b);
+        b=new pathbox(1,0,1,0,this);//17
+        box.push_back(b);
+        b=new pathbox(1,1,0,1,0,this);//18
+        box.push_back(b);
+        b=new pathbox(1,1,0,0,this);//19
+        box.push_back(b);
+        b=new pathbox(1,0,1,0,this);//20
+        box.push_back(b);
+        b=new pathbox(1,0,0,1,this);//21
+        box.push_back(b);
+        b=new pathbox(1,0,1,0,this);//22
+        box.push_back(b);
+        b=new pathbox(0,1,1,0,this);//23
+        box.push_back(b);
+        b=new pathbox(0,1,0,1,this);//24
+        box.push_back(b);
+        b=new pathbox(1,1,0,1,this);//25
+        box.push_back(b);
+        b=new pathbox(1,0,0,1,this);//26
+        box.push_back(b);
+        b=new pathbox(0,0,1,1,this);//27
+        box.push_back(b);
+        b=new pathbox(1,0,1,0,this);//28
+        box.push_back(b);
+        b=new pathbox(0,1,0,1,this);//29
+        box.push_back(b);
+        b=new pathbox(1,1,0,1,0,this);//30
+        box.push_back(b);
+        b=new pathbox(1,0,1,0,this);//31
+        box.push_back(b);
+        b=new pathbox(0,0,1,1,this);//32
+        box.push_back(b);
+        b=new pathbox(1,0,1,0,this);//33
+        box.push_back(b);
+        b=new pathbox(0,1,0,1,this);//34
+        box.push_back(b);
+        b=new pathbox(1,0,0,1,this);//35
+        box.push_back(b);
+        b=new pathbox(1,0,1,0,this);//36
+        box.push_back(b);
+        b=new pathbox(1,0,1,0,this);//37
+        box.push_back(b);
+        b=new pathbox(1,1,0,0,this);//38
+        box.push_back(b);
+        b=new pathbox(1,0,0,1,this);//39
+        box.push_back(b);
+        b=new pathbox(1,0,1,0,this);//40
+        box.push_back(b);
+        b=new pathbox(1,0,1,0,this);//41
+        box.push_back(b);
+        b=new pathbox(1,1,0,0,this);//42
+        box.push_back(b);
+        b=new pathbox(0,0,1,1,this);//43
+        box.push_back(b);
+        b=new pathbox(1,0,0,1,this);//44
+        box.push_back(b);
+        b=new pathbox(1,0,0,1,this);//45
+        box.push_back(b);
+        b=new pathbox(1,1,1,0,this);//46
+        box.push_back(b);
+        b=new pathbox(1,1,this);//47
+        box.push_back(b);
+        b=new pathbox(1,1,0,0,this);//48
+        box.push_back(b);
     commoncha();
 }
 void MainWindow::chapter4()
 {
     chaptercoise=4;
-    red=3;
-    green[0]=30,green[1]=33;
-    gr=2;
-    go=3;
-    border=7;
-    sln=0;
-    gold[0]=35,gold[1]=38,gold[2]=41;
-    pathbox *b=new pathbox(this);//0
-    box.push_back(b);
-    b=new pathbox(0,1,0,1,this);//1
-    box.push_back(b);
-    b=new pathbox(1,1,0,0,this);//2
-    box.push_back(b);
-    b=new pathbox(3,0,this);//3
-    box.push_back(b);
-    b=new pathbox(this);//4
-    box.push_back(b);
-    b=new pathbox(this);//5
-    box.push_back(b);
-    b=new pathbox(this);//6
-    box.push_back(b);
-    b=new pathbox(this);//7
-    box.push_back(b);
-    b=new pathbox(0,0,1,1,this);//8
-    box.push_back(b);
-    b=new pathbox(1,0,1,0,this);//9
-    box.push_back(b);
-    b=new pathbox(this);//10
-    box.push_back(b);
-    b=new pathbox(this);//11
-    box.push_back(b);
-    b=new pathbox(this);//12
-    box.push_back(b);
-    b=new pathbox(this);//13
-    box.push_back(b);
-    b=new pathbox(this);//14
-    box.push_back(b);
-    b=new pathbox(1,0,1,0,this);//15
-    box.push_back(b);
-    b=new pathbox(1,0,1,1,this);//16
-    box.push_back(b);
-    b=new pathbox(1,0,0,1,this);//17
-    box.push_back(b);
-    b=new pathbox(this);//18
-    box.push_back(b);
-    b=new pathbox(this);//19
-    box.push_back(b);
-    b=new pathbox(this);//20
-    box.push_back(b);
-    b=new pathbox(this);//21
-    box.push_back(b);
-    b=new pathbox(0,0,1,1,this);//22
-    box.push_back(b);
-    b=new pathbox(1,1,0,1,this);//23
-    box.push_back(b);
-    b=new pathbox(1,0,1,0,this);//24
-    box.push_back(b);
-    b=new pathbox(0,0,1,1,this);//25
-    box.push_back(b);
-    b=new pathbox(1,0,0,1,this);//26
-    box.push_back(b);
-    b=new pathbox(0,1,0,1,this);//27
-    box.push_back(b);
-    b=new pathbox(1,0,0,1,this);//28
-    box.push_back(b);
-    b=new pathbox(1,1,0,0,this);//29
-    box.push_back(b);
-    b=new pathbox(1,1,0,1,1,this);//30
-    box.push_back(b);
-    b=new pathbox(this);//31
-    box.push_back(b);
-    b=new pathbox(1,1,0,0,this);//32
-    box.push_back(b);
-    b=new pathbox(1,1,0,1,1,this);//33
-    box.push_back(b);
-    b=new pathbox(0,1,0,1,this);//34
-    box.push_back(b);
-    b=new pathbox(1,1,this);//35
-    box.push_back(b);
-    b=new pathbox(1,0,1,0,this);//36
-    box.push_back(b);
-    b=new pathbox(1,0,1,1,this);//37
-    box.push_back(b);
-    b=new pathbox(3,1,this);//38
-    box.push_back(b);
-    b=new pathbox(0,0,1,1,this);//39
-    box.push_back(b);
-    b=new pathbox(0,0,1,1,this);//40
-    box.push_back(b);
-    b=new pathbox(1,1,this);//41
-    box.push_back(b);
-    b=new pathbox(1,0,0,1,this);//42
-    box.push_back(b);
-    b=new pathbox(this);//43
-    box.push_back(b);
-    b=new pathbox(1,0,0,1,this);//44
-    box.push_back(b);
-    b=new pathbox(1,1,0,0,this);//45
-    box.push_back(b);
-    b=new pathbox(0,0,1,1,this);//46
-    box.push_back(b);
-    b=new pathbox(1,0,0,1,this);//47
-    box.push_back(b);
-    b=new pathbox(0,0,1,1,this);//48
-    box.push_back(b);
+    red=29;
+       green[0]=4,green[1]=32;
+       gr=2;
+       go=4;
+       border=9;
+       sln=0;
+       gold[0]=0,gold[1]=17,gold[2]=38,gold[3]=69;
+       pathbox *b=new pathbox(4,1,this);//0
+       box.push_back(b);
+       b=new pathbox(1,1,0,1,this);//1
+       box.push_back(b);
+       b=new pathbox(0,1,1,0,this);//2
+       box.push_back(b);
+       b=new pathbox(0,1,1,1,this);//3
+       box.push_back(b);
+       b=new pathbox(2,1,1,1,0,this);//4
+       box.push_back(b);
+       b=new pathbox(1,1,1,0,this);//5
+       box.push_back(b);
+       b=new pathbox(0,1,1,0,this);//6
+       box.push_back(b);
+       b=new pathbox(0,1,1,0,this);//7
+       box.push_back(b);
+       b=new pathbox(this);//8
+       box.push_back(b);
+       b=new pathbox(this);//9
+       box.push_back(b);
+       b=new pathbox(1,0,0,1,this);//10
+       box.push_back(b);
+       b=new pathbox(this);//11
+       box.push_back(b);
+       b=new pathbox(1,0,1,1,this);//12
+       box.push_back(b);
+       b=new pathbox(1,0,1,1,this);//13
+       box.push_back(b);
+       b=new pathbox(0,1,1,1,this);//14
+       box.push_back(b);
+       b=new pathbox(this);//15
+       box.push_back(b);
+       b=new pathbox(1,0,1,1,this);//16
+       box.push_back(b);
+       b=new pathbox(3,1,this);//17
+       box.push_back(b);
+       b=new pathbox(this);//18
+       box.push_back(b);
+       b=new pathbox(this);//19
+       box.push_back(b);
+       b=new pathbox(1,0,1,1,this);//20
+       box.push_back(b);
+       b=new pathbox(0,0,1,1,this);//21
+       box.push_back(b);
+       b=new pathbox(1,0,1,0,this);//22
+       box.push_back(b);
+       b=new pathbox(1,1,0,0,this);//23
+       box.push_back(b);
+       b=new pathbox(1,1,0,0,this);//24
+       box.push_back(b);
+       b=new pathbox(this);//25
+       box.push_back(b);
+       b=new pathbox(this);//26
+       box.push_back(b);
+       b=new pathbox(this);//27
+       box.push_back(b);
+       b=new pathbox(this);//28
+       box.push_back(b);
+       b=new pathbox(1,0,this);//29
+       box.push_back(b);
+       b=new pathbox(0,1,0,1,this);//30
+       box.push_back(b);
+       b=new pathbox(1,1,0,0,this);//31
+       box.push_back(b);
+       b=new pathbox(1,1,1,0,1,this);//32
+       box.push_back(b);
+       b=new pathbox(1,1,0,0,this);//33
+       box.push_back(b);
+       b=new pathbox(this);//34
+       box.push_back(b);
+       b=new pathbox(this);//35
+       box.push_back(b);
+       b=new pathbox(0,1,0,1,this);//36
+       box.push_back(b);
+       b=new pathbox(0,0,1,1,this);//37
+       box.push_back(b);
+       b=new pathbox(2,1,this);//38
+       box.push_back(b);
+       b=new pathbox(1,1,0,0,this);//39
+       box.push_back(b);
+       b=new pathbox(0,1,1,0,this);//40
+       box.push_back(b);
+       b=new pathbox(1,0,1,0,this);//41
+       box.push_back(b);
+       b=new pathbox(this);//42
+       box.push_back(b);
+       b=new pathbox(this);//43
+       box.push_back(b);
+       b=new pathbox(this);//44
+       box.push_back(b);
+       b=new pathbox(1,1,0,0,this);//45
+       box.push_back(b);
+       b=new pathbox(0,1,1,0,this);//46
+       box.push_back(b);
+       b=new pathbox(this);//47
+       box.push_back(b);
+       b=new pathbox(0,0,1,1,this);//48
+       box.push_back(b);
+       b=new pathbox(this);//49
+       box.push_back(b);
+       b=new pathbox(0,1,1,1,this);//50
+       box.push_back(b);
+       b=new pathbox(this);//51
+       box.push_back(b);
+       b=new pathbox(0,1,1,0,this);//52
+       box.push_back(b);
+       b=new pathbox(this);//53
+       box.push_back(b);
+       b=new pathbox(1,1,0,0,this);//54
+       box.push_back(b);
+       b=new pathbox(1,0,0,1,this);//55
+       box.push_back(b);
+       b=new pathbox(0,1,0,1,this);//56
+       box.push_back(b);
+       b=new pathbox(this);//57
+       box.push_back(b);
+       b=new pathbox(0,0,1,1,this);//58
+       box.push_back(b);
+       b=new pathbox(1,1,0,0,this);//59
+       box.push_back(b);
+       b=new pathbox(1,1,0,1,this);//60
+       box.push_back(b);
+       b=new pathbox(0,1,1,0,this);//61
+       box.push_back(b);
+       b=new pathbox(this);//62
+       box.push_back(b);
+       b=new pathbox(1,0,1,0,this);//63
+       box.push_back(b);
+       b=new pathbox(0,0,1,1,this);//64
+       box.push_back(b);
+       b=new pathbox(0,0,1,1,this);//65
+       box.push_back(b);
+       b=new pathbox(1,0,1,1,this);//66
+       box.push_back(b);
+       b=new pathbox(0,0,1,1,this);//67
+       box.push_back(b);
+       b=new pathbox(1,0,1,0,this);//68
+       box.push_back(b);
+       b=new pathbox(1,1,this);//69
+       box.push_back(b);
+       b=new pathbox(this);//70
+       box.push_back(b);
+       b=new pathbox(this);//71
+       box.push_back(b);
+       b=new pathbox(this);//72
+       box.push_back(b);
+       b=new pathbox(this);//73
+       box.push_back(b);
+       b=new pathbox(this);//74
+       box.push_back(b);
+       b=new pathbox(this);//75
+       box.push_back(b);
+       b=new pathbox(this);//76
+       box.push_back(b);
+       b=new pathbox(this);//77
+       box.push_back(b);
+       b=new pathbox(this);//78
+       box.push_back(b);
+       b=new pathbox(this);//79
+       box.push_back(b);
+       b=new pathbox(this);//80
+       box.push_back(b);
     commoncha();
 }
 void MainWindow::chapter5()
 {
         chaptercoise=5;
-    red=41;
-    green[0]=17,green[1]=22,green[2]=46;
-    gr=3;
-    go=4;
-    border=7;
-    sln=0;
-    gold[0]=4,gold[1]=14,gold[2]=28,gold[3]=43;
-    pathbox *b=new pathbox(this);//0
-    box.push_back(b);
-    b=new pathbox(this);//1
-    box.push_back(b);
-    b=new pathbox(this);//2
-    box.push_back(b);
-    b=new pathbox(this);//3
-    box.push_back(b);
-    b=new pathbox(2,1,this);//4
-    box.push_back(b);
-    b=new pathbox(this);//5
-    box.push_back(b);
-    b=new pathbox(this);//6
-    box.push_back(b);
-    b=new pathbox(this);//7
-    box.push_back(b);
-    b=new pathbox(this);//8
-    box.push_back(b);
-    b=new pathbox(this);//9
-    box.push_back(b);
-    b=new pathbox(1,0,0,1,this);//10
-    box.push_back(b);
-    b=new pathbox(1,0,1,0,this);//11
-    box.push_back(b);
-    b=new pathbox(this);//12
-    box.push_back(b);
-    b=new pathbox(this);//13
-    box.push_back(b);
-    b=new pathbox(4,1,this);//14
-    box.push_back(b);
-    b=new pathbox(1,0,1,0,this);//15
-    box.push_back(b);
-    b=new pathbox(0,0,1,1,this);//16
-    box.push_back(b);
-    b=new pathbox(2,1,1,1,0,this);//17
-    box.push_back(b);
-    b=new pathbox(0,1,1,0,this);//18
-    box.push_back(b);
-    b=new pathbox(0,1,0,1,this);//19
-    box.push_back(b);
-    b=new pathbox(1,0,1,0,this);//20
-    box.push_back(b);
-    b=new pathbox(this);//21
-    box.push_back(b);
-    b=new pathbox(4,1,0,1,1,this);//22
-    box.push_back(b);
-    b=new pathbox(0,1,0,1,this);//23
-    box.push_back(b);
-    b=new pathbox(0,0,1,1,this);//24
-    box.push_back(b);
-    b=new pathbox(1,0,0,1,this);//25
-    box.push_back(b);
-    b=new pathbox(1,0,1,1,this);//26
-    box.push_back(b);
-    b=new pathbox(1,1,0,0,this);//27
-    box.push_back(b);
-    b=new pathbox(4,1,this);//28
-    box.push_back(b);
-    b=new pathbox(1,0,0,1,this);//29
-    box.push_back(b);
-    b=new pathbox(0,0,1,1,this);//30
-    box.push_back(b);
-    b=new pathbox(1,0,0,1,this);//31
-    box.push_back(b);
-    b=new pathbox(1,1,1,0,this);//32
-    box.push_back(b);
-    b=new pathbox(1,0,1,1,this);//33
-    box.push_back(b);
-    b=new pathbox(1,1,0,0,this);//34
-    box.push_back(b);
-    b=new pathbox(1,0,0,1,this);//35
-    box.push_back(b);
-    b=new pathbox(1,0,1,0,this);//36
-    box.push_back(b);
-    b=new pathbox(0,0,1,1,this);//37
-    box.push_back(b);
-    b=new pathbox(0,0,1,1,this);//38
-    box.push_back(b);
-    b=new pathbox(0,0,1,1,this);//39
-    box.push_back(b);
-    b=new pathbox(0,0,1,1,this);//40
-    box.push_back(b);
-    b=new pathbox(1,0,this);//41
-    box.push_back(b);
-    b=new pathbox(this);//42
-    box.push_back(b);
-    b=new pathbox(4,1,this);//43
-    box.push_back(b);
-    b=new pathbox(1,0,1,1,this);//44
-    box.push_back(b);
-    b=new pathbox(1,1,1,0,this);//45
-    box.push_back(b);
-    b=new pathbox(4,0,1,1,1,this);//46
-    box.push_back(b);
-    b=new pathbox(1,0,0,1,this);//47
-    box.push_back(b);
-    b=new pathbox(this);//48
-    box.push_back(b);
+        red=86;
+           green[0]=4,green[1]=59,green[2]=63,green[3]=79;
+           gr=4;
+           go=3;
+           border=11;
+           sln=0;
+           gold[0]=19,gold[1]=35,gold[2]=102;
+           pathbox *b=new pathbox(this);//0
+           box.push_back(b);
+           b=new pathbox(this);//1
+           box.push_back(b);
+           b=new pathbox(1,0,1,0,this);//2
+           box.push_back(b);
+           b=new pathbox(0,1,1,1,this);//3
+           box.push_back(b);
+           b=new pathbox(2,1,1,1,0,this);//4
+           box.push_back(b);
+           b=new pathbox(0,0,1,1,this);//5
+           box.push_back(b);
+           b=new pathbox(1,1,0,0,this);//6
+           box.push_back(b);
+           b=new pathbox(0,0,1,1,this);//7
+           box.push_back(b);
+           b=new pathbox(1,0,1,0,this);//8
+           box.push_back(b);
+           b=new pathbox(this);//9
+           box.push_back(b);
+           b=new pathbox(this);//10
+           box.push_back(b);
+           b=new pathbox(this);//11
+           box.push_back(b);
+           b=new pathbox(this);//12
+           box.push_back(b);
+           b=new pathbox(1,1,0,0,this);//13
+           box.push_back(b);
+           b=new pathbox(0,0,1,1,this);//14
+           box.push_back(b);
+           b=new pathbox(this);//15
+           box.push_back(b);
+           b=new pathbox(this);//16
+           box.push_back(b);
+           b=new pathbox(1,0,1,0,this);//17
+           box.push_back(b);
+           b=new pathbox(1,1,0,0,this);//18
+           box.push_back(b);
+           b=new pathbox(3,1,this);//19
+           box.push_back(b);
+           b=new pathbox(this);//20
+           box.push_back(b);
+           b=new pathbox(this);//21
+           box.push_back(b);
+           b=new pathbox(this);//22
+           box.push_back(b);
+           b=new pathbox(1,0,1,0,this);//23
+           box.push_back(b);
+           b=new pathbox(0,1,1,0,this);//24
+           box.push_back(b);
+           b=new pathbox(0,1,1,0,this);//25
+           box.push_back(b);
+           b=new pathbox(1,0,1,1,this);//26
+           box.push_back(b);
+           b=new pathbox(1,1,0,0,this);//27
+           box.push_back(b);
+           b=new pathbox(1,1,0,1,this);//28
+           box.push_back(b);
+           b=new pathbox(this);//29
+           box.push_back(b);
+           b=new pathbox(this);//30
+           box.push_back(b);
+           b=new pathbox(this);//31
+           box.push_back(b);
+           b=new pathbox(this);//32
+           box.push_back(b);
+           b=new pathbox(this);//33
+           box.push_back(b);
+           b=new pathbox(1,1,0,1,this);//34
+           box.push_back(b);
+           b=new pathbox(2,1,this);//35
+           box.push_back(b);
+           b=new pathbox(this);//36
+           box.push_back(b);
+           b=new pathbox(this);//37
+           box.push_back(b);
+           b=new pathbox(this);//38
+           box.push_back(b);
+           b=new pathbox(0,0,1,1,this);//39
+           box.push_back(b);
+           b=new pathbox(1,0,0,1,this);//40
+           box.push_back(b);
+           b=new pathbox(1,0,1,0,this);//41
+           box.push_back(b);
+           b=new pathbox(this);//42
+           box.push_back(b);
+           b=new pathbox(this);//43
+           box.push_back(b);
+           b=new pathbox(this);//44
+           box.push_back(b);
+           b=new pathbox(1,1,0,0,this);//45
+           box.push_back(b);
+           b=new pathbox(0,0,1,1,this);//46
+           box.push_back(b);
+           b=new pathbox(this);//47
+           box.push_back(b);
+           b=new pathbox(this);//48
+           box.push_back(b);
+           b=new pathbox(this);//49
+           box.push_back(b);
+           b=new pathbox(1,0,1,1,this);//50
+           box.push_back(b);
+           b=new pathbox(this);//51
+           box.push_back(b);
+           b=new pathbox(1,0,0,1,this);//52
+           box.push_back(b);
+           b=new pathbox(this);//53
+           box.push_back(b);
+           b=new pathbox(this);//54
+           box.push_back(b);
+           b=new pathbox(this);//55
+           box.push_back(b);
+           b=new pathbox(0,0,1,1,this);//56
+           box.push_back(b);
+           b=new pathbox(0,1,1,0,this);//57
+           box.push_back(b);
+           b=new pathbox(1,1,0,0,this);//58
+           box.push_back(b);
+           b=new pathbox(3,1,0,1,1,this);//59
+           box.push_back(b);
+           b=new pathbox(this);//60
+           box.push_back(b);
+           b=new pathbox(this);//61
+           box.push_back(b);
+           b=new pathbox(1,0,1,1,this);//62
+           box.push_back(b);
+           b=new pathbox(4,0,1,1,1,this);//63
+           box.push_back(b);
+           b=new pathbox(1,0,0,1,this);//64
+           box.push_back(b);
+           b=new pathbox(this);//65
+           box.push_back(b);
+           b=new pathbox(this);//66
+           box.push_back(b);
+           b=new pathbox(1,0,1,1,this);//67
+           box.push_back(b);
+           b=new pathbox(0,0,1,1,this);//68
+           box.push_back(b);
+           b=new pathbox(1,0,1,0,this);//69
+           box.push_back(b);
+           b=new pathbox(this);//70
+           box.push_back(b);
+           b=new pathbox(0,1,1,0,this);//71
+           box.push_back(b);
+           b=new pathbox(this);//72
+           box.push_back(b);
+           b=new pathbox(this);//73
+           box.push_back(b);
+           b=new pathbox(0,0,1,1,this);//74
+           box.push_back(b);
+           b=new pathbox(0,0,1,1,this);//75
+           box.push_back(b);
+           b=new pathbox(this);//76
+           box.push_back(b);
+           b=new pathbox(this);//77
+           box.push_back(b);
+           b=new pathbox(1,0,0,1,this);//78
+           box.push_back(b);
+           b=new pathbox(1,1,0,1,1,this);//79
+           box.push_back(b);
+           b=new pathbox(0,1,1,0,this);//80
+           box.push_back(b);
+           b=new pathbox(0,1,1,0,this);//81
+           box.push_back(b);
+           b=new pathbox(0,0,1,1,this);//82
+           box.push_back(b);
+           b=new pathbox(0,0,1,1,this);//83
+           box.push_back(b);
+           b=new pathbox(this);//84
+           box.push_back(b);
+           b=new pathbox(1,1,0,0,this);//85
+           box.push_back(b);
+           b=new pathbox(1,0,this);//86
+           box.push_back(b);
+           b=new pathbox(this);//87
+           box.push_back(b);
+           b=new pathbox(this);//88
+           box.push_back(b);
+           b=new pathbox(this);//89
+           box.push_back(b);
+           b=new pathbox(0,0,1,1,this);//90
+           box.push_back(b);
+           b=new pathbox(this);//91
+           box.push_back(b);
+           b=new pathbox(this);//92
+           box.push_back(b);
+           b=new pathbox(1,1,0,0,this);//93
+           box.push_back(b);
+           b=new pathbox(this);//94
+           box.push_back(b);
+           b=new pathbox(this);//95
+           box.push_back(b);
+           b=new pathbox(this);//96
+           box.push_back(b);
+           b=new pathbox(this);//97
+           box.push_back(b);
+           b=new pathbox(this);//98
+           box.push_back(b);
+           b=new pathbox(this);//99
+           box.push_back(b);
+           b=new pathbox(this);//100
+           box.push_back(b);
+           b=new pathbox(1,0,0,1,this);//101
+           box.push_back(b);
+           b=new pathbox(4,1,this);//102
+           box.push_back(b);
+           b=new pathbox(0,0,1,1,this);//103
+           box.push_back(b);
+           b=new pathbox(0,1,1,0,this);//104
+           box.push_back(b);
+           b=new pathbox(this);//105
+           box.push_back(b);
+           b=new pathbox(this);//106
+           box.push_back(b);
+           b=new pathbox(0,0,1,1,this);//107
+           box.push_back(b);
+           b=new pathbox(this);//108
+           box.push_back(b);
+           b=new pathbox(this);//109
+           box.push_back(b);
+           b=new pathbox(this);//110
+           box.push_back(b);
+           b=new pathbox(this);//111
+           box.push_back(b);
+           b=new pathbox(this);//112
+           box.push_back(b);
+           b=new pathbox(1,0,0,1,this);//113
+           box.push_back(b);
+           b=new pathbox(0,0,1,1,this);//114
+           box.push_back(b);
+           b=new pathbox(1,1,1,0,this);//115
+           box.push_back(b);
+           b=new pathbox(0,0,1,1,this);//116
+           box.push_back(b);
+           b=new pathbox(1,1,0,0,this);//117
+           box.push_back(b);
+           b=new pathbox(1,0,1,0,this);//118
+           box.push_back(b);
+           b=new pathbox(this);//119
+           box.push_back(b);
+           b=new pathbox(this);//120
+           box.push_back(b);
     commoncha();
 }
 void MainWindow::chapter6()
@@ -601,13 +923,11 @@ void MainWindow::chapter6()
     bool static ct=true;
     if(ct==true)
     {
-        ui->
-                backsys->show();
+        ui->backsys->show();
         uimanager->setCurrentWidget(ui->backsys);
             chaptercoise=6;
             delete ui->centralWidget->layout();
             glayout=new QGridLayout();
-        this->showNormal();
         ct=false;
         for(int i=0;i<9;i++)
             mitem[i]->hide();
@@ -620,7 +940,6 @@ void MainWindow::chapter6()
     glayout->addWidget(ui->begin);
     ui->backsys->setLayout(glayout);
     word->start(10000);
-            this->showFullScreen();
     return;
     }
     chaptercoise=6;

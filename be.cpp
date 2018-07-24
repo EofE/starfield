@@ -15,7 +15,10 @@ void be::changehp(int n)
 }
 void be::changesp(int times, int number)
 {
-    sp+=(number*100/(251)-times/500)*2;
+    if(number<=100)
+            sp+=(number-times/500);
+    else
+    sp+=(number*100/(251)-times/500);
     if(sp>100)
         sp=100;
     if(sp<0)

@@ -88,7 +88,7 @@ group->start();
 chapexchange--;
     ui->exchange->setText(QString::number(chapexchange, 10));
 exchangestar=false;
-hs->changesp(15000/4,0);
+hs->changesp(7500,0);
 ui->HP->setValue(hs->hp);
 ui->SP->setValue(hs->sp);
 row[0]->hide();

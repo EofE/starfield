@@ -6,14 +6,20 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>796</width>
-    <height>667</height>
+    <width>1059</width>
+    <height>664</height>
    </rect>
   </property>
   <property name="minimumSize">
    <size>
-    <width>200</width>
-    <height>200</height>
+    <width>1059</width>
+    <height>664</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>1059</width>
+    <height>664</height>
    </size>
   </property>
   <property name="cursor">
@@ -812,7 +818,7 @@ color: rgb(188, 23, 23);</string>
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>796</width>
+     <width>1059</width>
      <height>26</height>
     </rect>
    </property>

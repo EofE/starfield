@@ -32,6 +32,7 @@
 #include<cstdlib>
 #include<ctime>
 #include<QFontDatabase>
+#include<QtConcurrent/QtConcurrent>
 using namespace std;
 MainWindow::MainWindow(QWidget *parent) :QMainWindow(parent),
     ui(new Ui::MainWindow)
@@ -64,6 +65,7 @@ MainWindow::MainWindow(QWidget *parent) :QMainWindow(parent),
     mitem[6]=ui->chap4;
     mitem[7]=ui->chap5;
     mitem[8]=ui->chap6;
+    restpart=true;
     outg();
     chaptercoise=0;
     wintrue=false;
@@ -268,15 +270,15 @@ void MainWindow::switchstar()
        return;
    pathbox *box=dynamic_cast<pathbox*>(sender());
    box->switchbox();
+   openlight=!openlight;
    drawline();
    if(hs->hp<=0)
        return;
-   drawline();
-   if(hs->hp<=0)
-       return;
+
 }
 void MainWindow::drawline()
 {
+    restpart=false;
     if(exchangestar==true||gw==true)
         return;
         openlight=!openlight;
@@ -355,6 +357,7 @@ void MainWindow::drawline()
 }
 void MainWindow::later(int center,int h,int b,int l,int r)
 {
+    restpart=false;
         int side=center-border;
     while(box[center]->head==1&&h==1&&side>=0&&box[side]->block==1)
         side-=border;
@@ -499,13 +502,11 @@ void MainWindow::commoncha()
     ui->SP->setMaximum(100);
     ui->SP->setMinimum(0);
     ui->SP->setValue(hs->sp);
-    this->showNormal();
     ing();
     connect(box[red],&pathbox::clicked,this,&MainWindow::drawline);
     for(int i=0;i<=border*border-1;i++)
         if(i!=red&&goldt(i,go)&&greent(i,gr))
            connect(box[i],&pathbox::clicked,this,&MainWindow::switchstar);
-        this->showFullScreen();
     openlight=0;
     exchangestar=false;
     mw=false;
@@ -535,6 +536,7 @@ void MainWindow::clearbox()
 
     bgm[1]->stop();
     bgm[0]->play();
+    delete timer;
     }
     update();
 if(chaptercoise==-3)
@@ -559,7 +561,10 @@ void MainWindow::ingame()
         rog[i]->setAttribute(Qt::WA_AlwaysStackOnTop);
         rog[i]->setGeometry(box[green[i]]->sitx()-box[green[i]]->height()/2,box[green[i]]->sity()-box[green[i]]->height()/2,box[green[i]]->height(),box[green[i]]->height());
     }
-    for(int i=0;i<go;i++)
+    if(onlyone1==false)
+    {
+        onlyone1=true;
+        for(int i=0;i<go;i++)
     {
         roy[i]->show();
         roy[i]->setClearColor(QColor(Qt::transparent));
@@ -575,6 +580,7 @@ void MainWindow::ingame()
         ui->quickWidget->setClearColor(QColor(Qt::transparent));
         ui->quickWidget->setAttribute(Qt::WA_AlwaysStackOnTop);
         ui->quickWidget->setGeometry(box[red]->sitx()-50,box[red]->sity()-50,100,100);}
+    }
     if(openlight==true)
     {
     for(int i=0;i<pst.size();i++)
@@ -629,7 +635,13 @@ pen.setColor(Qt::green);
             painter.setPen(pen);
             painter.drawLine(box[i]->sitp(),QPoint(box[i]->sitx()+box[i]->height()/2,box[i]->sity()));
         }
-        if(box[i]->inlines==0&&i!=red&&goldt(i,go)&&box[i]->block==0&&box[i]->guard==0&&!(box[i]->head==0&&box[i]->bottom==0&&box[i]->left==0&&box[i]->right==0))
+    }
+    if(restpart==false)
+    {
+    for(int i=0;i<border*border;i++)
+    {
+           restpart=!restpart;
+            if(box[i]->inlines==0&&i!=red&&goldt(i,go)&&box[i]->block==0&&box[i]->guard==0&&!(box[i]->head==0&&box[i]->bottom==0&&box[i]->left==0&&box[i]->right==0))
           {
             QIcon icon;
             icon.addFile(tr(":/img/star-w"));
@@ -643,6 +655,7 @@ pen.setColor(Qt::green);
                 if(chaptercoise==-2)
                     icon.addFile(tr(":/img/star-g"));
                 box[i]->setIcon(icon);
+        }
         }
 
     }
@@ -668,8 +681,11 @@ pen.setColor(Qt::green);
                 clearbox();
                 return;
             }
-            if(fi)
+                    if(fi)
             {
+           if(onlyone2==false)
+           {
+               onlyone2=true;
 for(int i=0;i<border*border;i++)
 {
     QIcon icon;
@@ -688,6 +704,7 @@ for(int i=0;i<border*border;i++)
          box[i]->setIcon(icon);
     }
 }
+           }
         QPixmap back = QPixmap(":/img/starfield-r").scaled(this->size());
         painter.drawPixmap(this->rect(), back);
         QPen pen(Qt::red);
@@ -697,9 +714,13 @@ for(int i=0;i<border*border;i++)
             painter.drawPixmap(this->rect(), back);
             pen.setColor(Qt::green);
             ui->quickWidget->hide();
+            if(onlyone4==false)
+            {
+                onlyone4=true;
              QIcon icon;
              if(chaptercoise==-3)
-            {icon.addFile(":/img/star-g");
+            {
+                 icon.addFile(":/img/star-g");
         box[7]->setIcon(icon);
                          ror->hide();}
              else
@@ -707,6 +728,7 @@ for(int i=0;i<border*border;i++)
                  icon.addFile(":/img/star-y");
                          box[112]->setIcon(icon);
              }
+            }
         }
         pen.setWidth(2);
         QPainterPath path;
@@ -718,11 +740,15 @@ for(int i=0;i<border*border;i++)
                ror->hide();
                for(int i=0;i<go;i++)
                    roy[i]->hide();
+               if(onlyone3==false)
+               {
+                   onlyone3=true;
                for(int i=0;i<border*border;i++)
                {
                    QIcon icon;
                    icon.addFile(":/img/star-n");
                    box[i]->setIcon(icon);
+               }
                }
                for(int i=0;i<sln;i++)
            {
@@ -816,12 +842,12 @@ void MainWindow::ing()
 {
     for(int i=0;i<9;i++)
         mitem[i]->hide();
-     int h=width()/height()+2;
+     int h=width()/height()+3;
          glayout=new QGridLayout();
          for(int j=0;j<border;j++)
              for(int k=0;k<border;k++)
     glayout->addWidget(box[j*border+k],j,k,1,h,Qt::AlignCenter);
-    glayout->setMargin(this->width()/5);
+    glayout->setMargin(this->width()/10);
     delete ui->centralWidget->layout();
     ui->centralWidget->setLayout(glayout);
     ui->label->show();
@@ -831,8 +857,11 @@ void MainWindow::ing()
     ui->exchange->show();
     ui->exchange->setText(QString::number(chapexchange, 10));
     ui->exchange->setStyleSheet("QPushButton{border-image: url(:/img/exchange) 0 0 0 0;color:red;}");
-    if(chaptercoise!=0)
+    static bool first0=true;
+    if(chaptercoise!=0||first0==false)
     ui->return_3->show();
+    else
+        first0=false;
     ui->HP->setStyleSheet("QProgressBar{border: 1px solid grey;text-align: center;color:#A39480;border-radius: 10px;backgroung-color: #FAF0E6}"
                           "QProgressBar::chunk{border-radius: 10px;background-color: #bc1717;}");
     ui->SP->setStyleSheet("QProgressBar{border: 1px solid grey;color:#A39480;text-align: center;background-color:#BDFCC9;border-radius: 10px;}"
@@ -846,6 +875,10 @@ void MainWindow::ing()
     ui->SP->setFont(font);
     ui->return_3->setFont(font);
     ui->exchange->setFont(font);
+    onlyone1=false;
+    onlyone2=false;
+    onlyone3=false;
+    onlyone4=false;
 }
 void MainWindow::numg(int gog)
 {
@@ -857,7 +890,7 @@ void MainWindow::numg(int gog)
     timec->start();
     ng->exec();
     if(ng->nums==0)
-        hs->changesp(5000,0);
+        hs->changesp(15000,0);
     else
     hs->changesp(timec->elapsed(),ng->nums);
     ui->HP->setValue(hs->hp);
@@ -878,8 +911,10 @@ void MainWindow::fini()
                         {if(chaptercoise!=-2)
                             winlist[chaptercoise-1]=true;
                         else
-                            wintrue=true;}
+                            wintrue=true,winlist[5]=true;}
                     }
+                    update();
+
 }
 void MainWindow::randborder(int red, int i)
 {
@@ -935,6 +970,8 @@ void MainWindow::addchange()
                 ui->quickWidget->setAttribute(Qt::WA_AlwaysStackOnTop);
                 ui->quickWidget->setGeometry(box[turn]->sitx()-50,box[turn]->sity()-50,100,100);
                 warn->play();
+                openlight=!openlight;
+                drawline();
 
 }
 void MainWindow::chapter6spec()
@@ -945,7 +982,7 @@ void MainWindow::chapter6spec()
     openlight=true;
     piontstack *ps=new piontstack(box[1]->sitx(),box[1]->sity(),box[7]->sitx(),box[7]->sity());
  pst.push_back(ps);
- update();
+update();
 }
 void MainWindow::endword()
 {
