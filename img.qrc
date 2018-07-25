@@ -57,6 +57,8 @@
         <file alias="5c">chapter5-c.png</file>
         <file alias="6a">chapter6-a.png</file>
         <file alias="6c">chapter6-c.png</file>
+        <file alias="exchange2">exchange2.png</file>
+        <file alias="return2">return2.png</file>
     </qresource>
     <qresource prefix="/">
         <file>line.qml</file>

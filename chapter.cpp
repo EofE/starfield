@@ -470,7 +470,7 @@ void MainWindow::chapter3()
         box.push_back(b);
         b=new pathbox(1,0,0,1,this);//39
         box.push_back(b);
-        b=new pathbox(1,0,1,0,this);//40
+        b=new pathbox(1,1,0,1,0,this);//40
         box.push_back(b);
         b=new pathbox(1,0,1,0,this);//41
         box.push_back(b);
@@ -524,11 +524,11 @@ void MainWindow::chapter4()
        box.push_back(b);
        b=new pathbox(this);//11
        box.push_back(b);
-       b=new pathbox(1,0,1,1,this);//12
+       b=new pathbox(1,1,0,1,this);//12
        box.push_back(b);
-       b=new pathbox(1,0,1,1,this);//13
+       b=new pathbox(1,1,0,0,this);//13
        box.push_back(b);
-       b=new pathbox(0,1,1,1,this);//14
+       b=new pathbox(1,1,0,1,this);//14
        box.push_back(b);
        b=new pathbox(this);//15
        box.push_back(b);
@@ -562,7 +562,7 @@ void MainWindow::chapter4()
        box.push_back(b);
        b=new pathbox(0,1,0,1,this);//30
        box.push_back(b);
-       b=new pathbox(1,1,0,0,this);//31
+       b=new pathbox(1,0,1,0,this);//31
        box.push_back(b);
        b=new pathbox(1,1,1,0,1,this);//32
        box.push_back(b);
@@ -600,7 +600,7 @@ void MainWindow::chapter4()
        box.push_back(b);
        b=new pathbox(this);//49
        box.push_back(b);
-       b=new pathbox(0,1,1,1,this);//50
+       b=new pathbox(1,1,1,0,this);//50
        box.push_back(b);
        b=new pathbox(this);//51
        box.push_back(b);
@@ -620,7 +620,7 @@ void MainWindow::chapter4()
        box.push_back(b);
        b=new pathbox(1,1,0,0,this);//59
        box.push_back(b);
-       b=new pathbox(1,1,0,1,this);//60
+       b=new pathbox(0,1,1,1,this);//60
        box.push_back(b);
        b=new pathbox(0,1,1,0,this);//61
        box.push_back(b);
@@ -634,7 +634,7 @@ void MainWindow::chapter4()
        box.push_back(b);
        b=new pathbox(1,0,1,1,this);//66
        box.push_back(b);
-       b=new pathbox(0,0,1,1,this);//67
+       b=new pathbox(0,1,1,0,this);//67
        box.push_back(b);
        b=new pathbox(1,0,1,0,this);//68
        box.push_back(b);
@@ -810,7 +810,7 @@ void MainWindow::chapter5()
            box.push_back(b);
            b=new pathbox(1,0,1,1,this);//67
            box.push_back(b);
-           b=new pathbox(0,0,1,1,this);//68
+           b=new pathbox(0,1,1,0,this);//68
            box.push_back(b);
            b=new pathbox(1,0,1,0,this);//69
            box.push_back(b);
@@ -974,6 +974,7 @@ void MainWindow::chapterbackto0()
 {
     warn=new QSound("warn.wav");
             srand(time(0));
+    hidetimecout=0;
     border=15;
     go=4;
     gr=0;

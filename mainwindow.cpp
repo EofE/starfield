@@ -452,6 +452,7 @@ void MainWindow::killguard(int i)
             return;
         }
         box[i]->guard=0;
+        box[i]->setStyleSheet("QPushButton:pressed{border-image: url(:/img/star-w);}");
     connect(box[i],&pathbox::clicked,this,&MainWindow::switchstar);
     }
 }
@@ -856,7 +857,11 @@ void MainWindow::ing()
     ui->SP->show();
     ui->exchange->show();
     ui->exchange->setText(QString::number(chapexchange, 10));
-    ui->exchange->setStyleSheet("QPushButton{border-image: url(:/img/exchange) 0 0 0 0;color:red;}");
+    ui->exchange->setStyleSheet("QPushButton{border-image: url(:/img/exchange) 0 0 0 0;color:red;}"
+                                "QPushButton:pressed{border-image:url(:/img/exchange2) 0 0 0 0;}");
+    ui->return_3->setStyleSheet("QPushButton{border-image: url(:/img/return) 0 0 0 0;color:red;}"
+                                "QPushButton:pressed{border-image:url(:/img/return2) 0 0 0 0;}");
+
     static bool first0=true;
     if(chaptercoise!=0||first0==false)
     ui->return_3->show();
@@ -954,6 +959,9 @@ box.push_back(b);
 }
 void MainWindow::addchange()
 {
+    hidetimecout++;
+    if(hidetimecout>220)
+        return;
     srand(time(0));
     chapexchange++;
     ui->exchange->setText(QString::number(chapexchange, 10));
